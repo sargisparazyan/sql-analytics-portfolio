@@ -1,4 +1,3 @@
-
 -- Load core dimension tables from CSV files
 \echo 'Loading core dimension tables from CSVs'
 COPY analytics.countries
@@ -29,7 +28,6 @@ CSV HEADER;
 COPY analytics.order_items
 FROM '/docker-entrypoint-initdb.d/data/analytics_schema/order_items.csv'
 CSV HEADER;
-
 
 -- Load staging boundary/point data with WKT geometries
 \echo 'Loading staging WKT boundary/point CSVs'
