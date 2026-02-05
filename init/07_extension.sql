@@ -1,0 +1,3 @@
+CREATE EXTENSION IF NOT EXISTS postgis;
+CREATE SCHEMA IF NOT EXISTS project;
+SET search_path TO project;
