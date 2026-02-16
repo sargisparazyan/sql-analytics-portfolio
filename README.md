@@ -116,8 +116,200 @@ As a result, the database appeared successfully.
 
 Finally, to stop the server and containers, we ran the docker compose down command.
 
+
+
+# 🚲 US Bicycle Sales Database (PostgreSQL + Docker)
+
+## 📌  Final Project Overview
+
+This project represents a fully designed and normalized PostgreSQL database for a Bicycle Sales company operating in three U.S. states:
+
+- Texas  
+- California  
+- New York  
+
+The database was built and deployed using:
+
+- PostgreSQL  
+- Docker  
+- pgAdmin  
+- VS Code  
+
+The original dataset was **denormalized**.  
+I redesigned and structured it into a fully relational schema by applying database normalization principles.
+
 ---
+
+## 🎯 Objectives
+
+- Transform a denormalized dataset into a normalized relational schema
+- Apply Primary Keys and Foreign Keys
+- Establish correct entity relationships
+- Ensure 3NF compliance
+- Improve data integrity and scalability
+- Integrate geographic boundary data for spatial analysis
+
+---
+
+## 🏗 Database Schema
+
+### Core Business Tables
+
+- `customers`
+- `orders`
+- `order_items`
+- `products`
+- `brands`
+- `categories`
+- `stores`
+- `staffs`
+- `stocks`
+
+### Geographic Tables
+
+- `countries`
+- `states`
+- `cities`
+- `state_boundaries`
+- `country_boundaries`
+
+---
+
+## 🔗 Relationships
+
+- One-to-Many: `orders → order_items`
+- One-to-Many: `brands → products`
+- One-to-Many: `categories → products`
+- One-to-Many: `stores → stocks`
+- Hierarchical Geography: `country → state → city`
+
+All relationships are enforced using Foreign Key constraints.
+
+---
+
+## 🧠 Normalization Process
+
+The original dataset contained redundancy and repeating groups.
+
+Steps performed:
+
+1. Identified repeating data patterns  
+2. Separated entities into independent tables  
+3. Removed redundant attributes  
+4. Defined Primary Keys  
+5. Added Foreign Key constraints  
+6. Ensured Third Normal Form (3NF)
+
+### Benefits
+
+- Reduced redundancy  
+- Improved consistency  
+- Better query performance  
+- Scalable structure  
+- Analytics-ready schema  
+
+---
+
+## 🗺 Geospatial Data
+
+The project includes geographic boundary tables:
+
+- `state_boundaries`
+- `country_boundaries`
+
+These enable:
+
+- Regional sales analysis  
+- Map-based visualization  
+- Spatial expansion with PostGIS  
+- Geographic performance comparison  
+
+---
+
+## 🐳 Environment Setup
+
+The project runs inside Docker containers.
+
+### Technology Stack
+
+- PostgreSQL
+- Docker
+- pgAdmin
+- VS Code
+
+Docker ensures:
+
+- Environment reproducibility  
+- Isolated database deployment  
+- Easy scalability  
+
+---
+
+## 📊 Business Use Cases
+
+This database supports:
+
+- Sales analysis by state  
+- Store performance evaluation  
+- Product category analysis  
+- Inventory management  
+- Customer behavior tracking  
+- Geographic sales mapping  
+
+---
+
+## 📂 Project Structure
+
+```bash
+final_schema/
+│
+├── brands.csv
+├── categories.csv
+├── cities.csv
+├── countries.csv
+├── country_boundaries.csv
+├── customers.csv
+├── order_items.csv
+├── orders.csv
+├── products.csv
+├── staffs.csv
+├── state_boundaries.csv
+├── states.csv
+├── stocks.csv
+└── stores.csv
+```
+
+
+### 🧠 Design Highlights
+
+- Fully normalized (3NF)
+- Referential integrity enforced
+- Clear separation of business and geographic entities
+- Inventory management linked to store-level operations
+- Designed for analytical scalability
+
+
+---
+
+## 🚀 Future Improvements
+
+- Add analytical views  
+- Create materialized views  
+- Implement stored procedures  
+- Integrate PostGIS spatial queries  
+- Connect to Power BI / Tableau dashboard  
+
+---
+
 
 ## Result
 
 The database was successfully created, configured, and launched using Docker and pgAdmin.
+
+## 👨‍💻 Author
+
+**Sargis Parazyan**  
+Data Analyst | PostgreSQL | Data Modeling  
+
+
+---
