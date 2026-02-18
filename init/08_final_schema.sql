@@ -27,8 +27,8 @@ CREATE TABLE project.stores (
     phone VARCHAR(30),
     email TEXT UNIQUE,
     street VARCHAR(50),
-    city TEXT NOT NULL,
-    state TEXT NOT NULL,
+    city_id INT NOT NULL REFERENCES project.cities(city_id),
+    state_id INT NOT NULL REFERENCES project.states(state_id),
     zip_code VARCHAR(30)
 );
 
@@ -42,9 +42,9 @@ CREATE TABLE project.customers (
     phone VARCHAR(30),
     email TEXT UNIQUE,
     street TEXT NOT NULL,
-    city TEXT NOT NULL,
-    state TEXT NOT NULL,
-    zip_code VARCHAR(30)
+    zip_code VARCHAR(30),
+    city_id INT NOT NULL REFERENCES project.cities(city_id),
+    state_id INT NOT NULL REFERENCES project.states(state_id)
 );
 
 

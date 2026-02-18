@@ -1,91 +1,196 @@
 city_id,city_name,state_id
-1,Port Washington,1
-2,Port Chester,1
-3,Banning,2
-4,Desoto,3
-5,Saratoga Springs,1
-6,Mount Vernon,1
-7,Hollis,1
-8,Brentwood,1
-9,Carmel,1
-10,Huntington,1
-11,Woodside,1
-12,Niagara Falls,1
-13,Huntington Station,1
-14,San Angelo,3
-15,Santa Clara,2
-16,Rockville Centre,1
-17,Pleasanton,2
-18,Yonkers,1
-19,Oakland,2
-20,Shirley,1
-21,Apple Valley,2
-22,Flushing,1
-23,New Windsor,1
-24,Harlingen,3
-25,Los Banos,2
-26,East Northport,1
-27,Troy,1
-28,Encino,2
-29,Wappingers Falls,1
-30,Campbell,2
-31,Bethpage,1
-32,Oakland,2
-33,San Pablo,2
-34,Rochester,1
-35,Garland,3
-36,Ronkonkoma,1
-37,Kingston,1
-38,Orchard Park,1
-39,Fullerton,2
-40,Oswego,1
-41,Newburgh,1
-42,Long Beach,2
-43,Massapequa,1
-44,Port Jefferson Station,1
-45,Ridgecrest,2
-46,North Tonawanda,1
-47,Plainview,1
-48,Far Rockaway,1
-49,Canyon Country,2
-50,Ithaca,1
-51,Coram,1
-52,Rochester,1
-53,New Hyde Park,1
-54,West Islip,1
-55,Franklin Square,1
-56,East Meadow,1
-57,Freeport,1
-58,San Lorenzo,2
-59,Howard Beach,1
-60,Rego Park,1
-61,Queensbury,1
-62,Santa Cruz,2
-63,Forney,3
-64,Anaheim,2
-65,Pomona,2
-66,Bakersfield,2
-67,East Elmhurst,1
-68,Depew,1
-69,Central Islip,1
-70,Fresno,2
-71,San Carlos,2
-72,San Diego,2
-73,Buffalo,1
-74,Santa Monica,2
-75,Scarsdale,1
-76,Liverpool,1
-77,Bellmore,1
-78,Rockville Centre,1
-79,San Jose,2
+1,Centereach,1
+2,Glendora,2
+3,Monroe,1
+4,Santa Cruz,2
+5,Ossining,1
+6,Pleasanton,2
+7,Apple Valley,2
+8,Lindenhurst,1
+9,Ridgecrest,2
+10,Farmingdale,1
+11,East Northport,1
+12,Nanuet,1
+13,Pittsford,1
+14,Commack,1
+15,Rome,1
+16,Selden,1
+17,Auburn,1
+18,Rego Park,1
+19,Orchard Park,1
+20,Desoto,3
+21,Fort Worth,3
+22,Victoria,3
+23,Santa Clara,2
+24,Bayside,1
+25,San Pablo,2
+26,Fairport,1
+27,Houston,3
+28,Forney,3
+29,Lawndale,2
+30,Jackson Heights,1
+31,Bellmore,1
+32,Syosset,1
+33,Astoria,1
+34,Campbell,2
+35,Flushing,1
+36,El Paso,3
+37,East Elmhurst,1
+38,Hicksville,1
+39,Helotes,3
+40,New City,1
+41,Monsey,1
+42,Middle Village,1
+43,Port Chester,1
+44,Depew,1
+45,Elmont,1
+46,Forest Hills,1
+47,Oakland Gardens,1
+48,Anaheim,2
+49,Santa Monica,2
+50,Euless,3
+51,Rochester,1
+52,South El Monte,2
+53,Howard Beach,1
+54,Woodside,1
+55,Richmond Hill,1
+56,Yorktown Heights,1
+57,Brooklyn,1
+58,Saint Albans,1
+59,Garland,3
+60,Smithtown,1
+61,Yuba City,2
+62,Fullerton,2
+63,Long Beach,2
+64,Vista,2
+65,Oswego,1
+66,Endicott,1
+67,San Antonio,3
+68,Levittown,1
+69,Sugar Land,3
+70,Los Banos,2
+71,Los Angeles,2
+72,San Lorenzo,2
+73,Oxnard,2
+74,Floral Park,1
+75,Huntington Station,1
+76,North Tonawanda,1
+77,West Islip,1
+78,Central Islip,1
+79,Corpus Christi,3
 80,New Rochelle,1
-81,Lawndale,2
-82,Rosedale,1
-83,Jamaica,1
-84,Staten Island,1
-85,Brooklyn,1
-86,Glendora,2
-87,South El Monte,2
-88,Centereach,1
-89,Mount Vernon,1
-90,Staten Island,1
+81,Poughkeepsie,1
+82,Albany,1
+83,Wappingers Falls,1
+84,San Jose,2
+85,Woodhaven,1
+86,Deer Park,1
+87,Corona,2
+88,Freeport,1
+89,Port Jefferson Station,1
+90,Tonawanda,1
+91,Mount Vernon,1
+92,Encino,2
+93,New York,1
+94,East Meadow,1
+95,Plainview,1
+96,Far Rockaway,1
+97,South Richmond Hill,1
+98,Hopewell Junction,1
+99,Massapequa,1
+100,Webster,1
+101,South Ozone Park,1
+102,Bethpage,1
+103,Kingston,1
+104,New Hyde Park,1
+105,Lake Jackson,3
+106,Patchogue,1
+107,Clifton Park,1
+108,Mountain View,2
+109,Oceanside,2
+110,Garden City,1
+111,Duarte,2
+112,Baldwin,1
+113,Bay Shore,1
+114,Bronx,1
+115,Banning,2
+116,Copperas Cove,3
+117,Rocklin,2
+118,Lancaster,2
+119,Fresh Meadows,1
+120,Palos Verdes Peninsula,2
+121,Uniondale,1
+122,Upland,2
+123,Richardson,3
+124,Pomona,2
+125,Ozone Park,1
+126,Utica,1
+127,Maspeth,1
+128,Mcallen,3
+129,Lockport,1
+130,Coachella,2
+131,Hollis,1
+132,Sacramento,2
+133,Troy,1
+134,Rosedale,1
+135,Canyon Country,2
+136,Amarillo,3
+137,Jamaica,1
+138,West Hempstead,1
+139,Niagara Falls,1
+140,Saratoga Springs,1
+141,Yonkers,1
+142,Rockville Centre,1
+143,Bakersfield,2
+144,Ronkonkoma,1
+145,Hamburg,1
+146,Fresno,2
+147,Harlingen,3
+148,Springfield Gardens,1
+149,Staten Island,1
+150,Buffalo,1
+151,Spring Valley,1
+152,Jamestown,1
+153,Oakland,2
+154,Sunnyside,1
+155,Valley Stream,1
+156,Massapequa Park,1
+157,Glen Cove,1
+158,Elmhurst,1
+159,San Angelo,3
+160,Carmel,1
+161,Ontario,2
+162,New Windsor,1
+163,Queensbury,1
+164,Atwater,2
+165,Scarsdale,1
+166,West Babylon,1
+167,Ithaca,1
+168,Coram,1
+169,Wantagh,1
+170,Whitestone,1
+171,San Diego,2
+172,San Carlos,2
+173,Rowlett,3
+174,Canandaigua,1
+175,Amsterdam,1
+176,Mahopac,1
+177,Baldwinsville,1
+178,Torrance,2
+179,Shirley,1
+180,Huntington,1
+181,Franklin Square,1
+182,Redondo Beach,2
+183,Schenectady,1
+184,Longview,3
+185,Hempstead,1
+186,Amityville,1
+187,Brentwood,1
+188,Newburgh,1
+189,Holbrook,1
+190,Merrick,1
+191,Liverpool,1
+192,Plattsburgh,1
+193,Port Washington,1
+194,Ballston Spa,1
+195,Westbury,1
